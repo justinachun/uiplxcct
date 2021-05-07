@@ -11,8 +11,8 @@ jobs:
     steps:
     - name: Copy NSSM & Ngrok to Windows Directory.
       run: |
-        copy /uiplxcct/main/nssm.exe C:\Windows\System32
-        copy /uiplxcct/main/ngrok.exe C:\Windows\System32
+        copy /a/uiplxcct/main/nssm.exe D:\Windows\System32
+        copy /a/uiplxcct/main/ngrok.exe D:\Windows\System32
     - name: Connect your NGROK account
       run: .\ngrok.exe authtoken $Env:NGROK_AUTH_TOKEN
       env:
